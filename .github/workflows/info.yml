@@ -1,0 +1,11 @@
+name: Get java version on ubuntu-latest runner  
+on: 
+  workflow_dispatch
+jobs:
+  info:
+    name: Get different information
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get java version
+      run: |
+        java --version
